@@ -1,0 +1,24 @@
+git log 
+git log -p ( details log verion )
+git log --pretty=oneline 
+git log --since = 200.minutes 
+git log --stat   (changed details in files,which portion is added/deleted)
+
+
+git diff (show difference between previous 'commit' with 'before stageging' version) ( before staging)
+git diff <file name> (show diff specific for a <file name>)
+git diff ( shows only unstaged changes by default)
+git diff --staged( shows changes btn previous commit and now staged version)
+git diff --staged <file name>
+
+git diff (diff of what is changed but not staged)
+
+git branch b1 (creates a branch 'b1' nameed,but create a 'head' first!!)
+
+git switch (switch branches)
+git branch -d  b1 (deletes 'b1' branch)
+
+git stash 
+git stash save  "<message>"
+git stash list  (listed all stash )
+git stash drop <stash id>  (droped <stash id>)

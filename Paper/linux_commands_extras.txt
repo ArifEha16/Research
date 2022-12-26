@@ -1,0 +1,18 @@
+#files to be in gzip (zip)#
+gzip f1.txt 
+
+(this f1.txt will be zip as = (f1.txt.gz) )
+
+#unzip the file #
+
+gunzip f1.txt.gz
+
+# create a file and write content to it same time #
+
+echo "File Content" > f1.txt
+
+#open file in cmd or gitbush #
+start <file name>
+
+#open files in linux#
+open <file name>

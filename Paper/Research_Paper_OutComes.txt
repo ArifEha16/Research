@@ -1,0 +1,193 @@
+complex structure originates poor execution time.
+security of the data directly depends on the key length,higher key length wil provide 
+higher secucity but it can increase the executioni time.
+
+
+[1]  Design and Implementation of New Encryption algorithm to 
+Enhance Performance Parameters  (Rajni Jain, 
+2Ajit Shrivasta)
+
+approaches was:
+  two phases, (need to read,while writing the documentation)
+
+ #############################
+n attacker send fake requests again and again to consume all the resources and 
+when a legitimate request try to execute the process then system denies to process the  same request because of un availability of resources 
+
+
+
+[2]   A Hybrid Approach for Encrypting Data on Cloud to prevent DoS Attacks
+            (Navdeep Singh and Pankaj Deep Kaur)
+
+The main focus of this paper is to combine these both techniques in such a way that the cipher created by the AES is can be used as encrypted data.Denial of service (DoS) attacks has become a major threat to current computer networks.
+in this paper,implements RSA+AES combinely
+
+the whole process of this paper is given below
+
+1. Key Generation
+2. Data Encryption  (AES part finishes)
+3. Private Key Encryption(RSA part starts)
+4. Private Key Decryption
+5. Data Decryption
+
+OutComes: further read the paper, DoS attack is prevented 
+
+
+Confidentiality : avoid unauthorized disclosure of the protected data
+Integrity  : data will be protected against illegal modification and deletion
+Availability : It refers to data, software, but also storage being available to authorized users upon demand at cloud computing environment. 
+D. Authorization  It means to identify who can access information and other computing services.
+E. Non-repudiation  It means the ability to ensure that a sender cannot deny the authenticity of his signature on a document or the sending of a message that he originated
+
+
+
+[3]A Hybrid Hashing Security Algorithm for Data Storage on Cloud Computing
+	(writer Noha MM. AbdElnapi )
+
+OutComes: use AES,RSA,SHA-256 Hash combinely
+ read paper while writing documentation
+
+
+[4] Design and Implementation of Hybrid Cryptosystem using AES and Hash Function
+         (Vanishreeprasad)
+OutComes: AES with SHA-256
+
+
+Static s-box allows data analyses attack and the eventual 
+captures of sub-keys using inverse SubByte knowing inverse sbox.
+
+################################
+According to a research paper published by H. Alanazi et al 
+[3] it is shown that AES is better and securer than DES and 
+DES III is in nine factors. The first factor is the differences 
+in the key length for each one of them, for example the key 
+length of DES is 56bits, for DES III is ((for k1, k2 and k3) 
+168 bits, (k1 and k2 is same) 112 bits), and for AES it is 
+(128,192 and 256 bits). The second factor is the 
+cryptographic type; all of them have the same cipher type 
+which is (symmetric block cipher). The third factor is the 
+block size, the DES block size is 64 bits long and for AES 
+128 bits, 192 bits and 256 bits). The forth factor shows the 
+Cryptanalysis resistance for example, DES is vulnerable to 
+linear and differential to cryptanalysis. It also has weak 
+substitution tables; DES III is also vulnerable to differential 
+and brute force attacks by analyzıng plaintext using 
+differential cryptanalysis, but AES is a strong truncated 
+differential, against differential, interpolation, linear, and 
+square attacks. The fifth factor concerns the security; the 
+DES security is proven inadequate, the DES III is also 
+proven inadequate. Like DES while the AES is considered 
+secure. The sixth factor is possible keys, the possible keys 
+for DES is 256, for DES III are 2112 and 2 168, and for AES are 
+2128, 2192 and 2256. The seventh factor is the possibility of 
+ASCII printable character keys for DES is 957
+, for DES III 
+is 9514 and 9521 for AES is 9516,9524 and 9532.the eighth 
+factor is time check all possible keys required at 50 billion 
+keys per second for a 56 bit key of DES it requires 400 
+days , for a 112- bit key of DES III it requires 800, and for a 
+128 bit key of AES :5X1021 years. The ninth factor is the 
+developed year of each one of them; DES was developed in 
+1977, DES III was developed in 1978, AES was developed 
+in 2000 [3] 
+################################################################3
+AES algorithm has some 
+vulnerability that leads to different attacks on its algorithm 
+for instance: Cache-timing attacks, power analysis of key 
+scheduling of AES etc. 
+
+On the other hand AES is not 
+totally resistant against different types of Side Channel 
+Attacks including timing attack, cache collision timing 
+attacks, electromagnetic radiation and power consumption 
+attack. The timing attack is an application level attack that 
+attacks cipher text only and could happen to any application 
+that doesn’t work in a steady time, rather than to rely on the 
+input so the high speed AES software application is in 
+danger against this kind of attack because it executes a 
+series of S-box lookups relying on variable time among 
+rounds, as the last round in AES encryption does not include 
+the Mix Column stage
+#############################
+
+We have seen that the greatest risk attacks to AES algorithm 
+is the side channel attacks because they have the ability to 
+take back the secret key of AES encryption being executed 
+on small devices like smart cards easily. Other names for 
+side channel attacks are differential attacks covering power 
+analysis attacks, timing attacks and so on. Side channel 
+attack can be countered by applying security software 
+applications or hardware protection algorithms. The other 
+weak point of the AES algorithm is the cache memory 
+processer leakage which causes the differential timing for 
+memory access that attackers take advantage of and uses it 
+to obtain information concerning the secret key.
+###########################################
+
+
+
+
+
+[5] Countering AES Static S-Box Attack
+  (Read again)
+
+In this paper we firstly covered a concise study on various 
+AES attacks. In addition we provided a simple 
+implementation of our novel approach to update the s-box 
+table per each round based on a mirrored position sub-key to 
+protect AES from s-box analysis and similar side channel 
+attacks. The implementation is provided in C language in 
+detail suitable for both computers and embedded targets.
+
+#########################################
+ The substitution box (S-Box) is among the most sensitive parameters of this standard, which plays a crucial role in the protection against these attacks.A good S-Box is the one that achieves a high quality for most of its
+cryptographic properties. However, it is difficult to find an S-Box
+that fulfils all the cryptographic criteria at the same time. This is
+due to the fact that some of these properties are contradictory to
+each other's. This is reflected in the weakening of some criteria in
+trying to improve others.
+
+
+
+[6]  Advanced encryption standard based on key dependent S-Box cube 
+	(wriiter : Athmane Seghier1 )
+
+use round key for random rotaion on static s-box like s-box.n this study, a new AES version is proposed, based on keydependent S-Box cube, in which six S-Boxes are constructed with
+distinct irreducible polynomials key dependently selected. These SBoxes are used to select for each round, through the movement of
+the Cube guided by a fragment from the round key, an initial S-Box
+processed by a round constant to obtain an active round S-Box.
+
+################################
+ Cyber-attacks are continuously developing; therefore 
+security specialists must stay busy in the lab inventing 
+new schemes to keep attackers at bay.
+Symmetric algorithm can be broken by Brute-force 
+Attack, Differential Attack, Algebraic Attack and 
+Linear Attack
+
+
+
+[7] Advanced Encryption Standard (AES) Security  Enhancement using Hybrid Approach
+               writer (Flevina Jonese D’souza)\
+
+OutComes:  The system will use 128 bits data and 128 bits key length. 
+The sender will start the process by message transmission. The 
+key will be dynamically generated based on function of time 
+when sender logs in to system. In next step the S-box will be 
+made dynamic by performing circular shift of it by value 
+obtained after XOR on all bytes of round key. There will be 
+added phase of creating S-box dynamic. Before substitute byte 
+transformation stage, the static s-box will be transformed into
+dynamic using cipher key. For the decryption process, inverse 
+S-box will also be changed from static to dynamic in similar 
+way to dynamic S-box. 
+
+
+
+[8]  Making AES Stronger: AES with Key Dependent S-Box 
+        writer(Krishnamurthy G N, V Ramaswam)
+user AES-KDS algo
+
+
+[9] Comparative Study of Database Security In Cloud Computing Using AES 
+and DES Encryption Algorithms
