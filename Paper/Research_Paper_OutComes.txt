@@ -191,3 +191,64 @@ user AES-KDS algo
 
 [9] Comparative Study of Database Security In Cloud Computing Using AES 
 and DES Encryption Algorithms
+
+--------------------------------------------------------------
+       today-2/7/2023 at - 9:54 PM
+--------------------------------------------------------------
+
+##############################################
+comparison of AES,DES,RSA Algorithm:
+paper title :   Secure Cloud Storage Using AES Encryption
+author       :   Babitha  M.P   ,   K.R Remesh Babu
+##############################################
+
+To calculate the performance of the suggested algorithm, the two parameters were used; these parameters are 
+avalanche effect and execution time. The results achieved by applying the proposed technique show better
+performance of the algorithm as compared existing algorithm.
+
+###########################################################
+ under the same key length and 
+for the same size of the processed data, RSA is about several hundred times slower than AES, triple-DES is 
+about three times slower than AES, and there are other runtime characteristics which further highlights the 
+difference between these three cryptographic algorithms and provides a reference value for people’s rational 
+using
+#############################################################
+
+Execution time of algorithm directly depends on the functionality of the algorithm and it’s clearly 
+defines that more complex structure originates poor execution time. Security of the data directly depends on the 
+key length, higher key length will provide higher security but it can increase the execution time of the algorithm 
+so it is very important that what should be the key length and how execution time got controlled, if selected key 
+length is higher. Avalanche effect is a desirable property of any encryption algorithm, in this a small change in 
+either the plaintext or the key, produces a significant change in the cipher text. So it can play an important role 
+in security issue. Another issue is the memory utilization because different encryption algorithms require 
+different memory size for implementation. This memory requirement depends on the number of operations to be 
+done by the algorithm. It is desirable that the memory required should be as small as possible. Selection of 
+operation is also responsible to increase or decrease the overall performance of the proposed algorithm. 
+#################################################################
+
+
+3. Advantage of Proposed Model:-
+ Efficient
+ Robustness
+ Secured
+ Simple
+
+###########################################################
+Here two different parameters are used to evaluate performance of the proposed system. First is 
+avalanche effect and second is encryption and decryption time
+###########################################################
+There are many algorithms available for the encryption and decryption 
+but the most efficient technique is RSA and AES by the performance and response time. 
+##########################################################
+It is widely
+believed that any cryptosystem having good dynamic and randomness properties can easily
+resist these kind of modern attacks
+######################################################
+The use of
+any known S-box transformation or any additive constant is not good way to create dynamic
+substitution, because, the known parameters always help the cracker in cryptanalysis. Thus,
+the predefined substitution with publically know S-Box is a noteworthy challenge with
+current symmetric cryptosystems
+#################################################
+
+
